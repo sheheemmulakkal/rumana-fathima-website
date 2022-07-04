@@ -60,6 +60,10 @@
 
     <div class="row grid-section container-fluid p-4">
 
+        <div  onclick="show30()" class="image col-6 col-md-3 col-lg-2">
+          <img class="card-img" src="img/crd-stry-30.jpg" alt="">
+        </div>
+
         <div  onclick="show29()" class="image col-6 col-md-3 col-lg-2">
           <img class="card-img" src="img/crd-stry-29.jpg" alt="">
         </div>
@@ -182,6 +186,8 @@
 
 
     <!----  POPUP   -->
+
+
 
     <div id="pp-1" class="popup-bg">
         <span onclick="close1()" >&times;</span>
@@ -412,13 +418,22 @@
     </div>
 
 
+    <div id="pp-30" class="popup-bg">
+        <span onclick="close30()" >&times;</span>
+        <div class="popup-image-1">
+            <img src="img/stry-30 cd.jpg" alt="">
+       </div>
+        <a href="img/stry-30.jpg" class="dwnld-btn" download="story queen of june">download</a>
+    </div>
+
     <div id="pp-29" class="popup-bg">
-      <span onclick="close29()" >&times;</span>
-      <div class="popup-image-1">
-          <img src="img/stry-29 cd.jpg" alt="">
-     </div>
-      <a href="img/stry-29.jpg" class="dwnld-btn" download="story queen of june">download</a>
-  </div>
+        <span onclick="close29()" >&times;</span>
+        <div class="popup-image-1">
+            <img src="img/stry-29 cd.jpg" alt="">
+       </div>
+        <a href="img/stry-29.jpg" class="dwnld-btn" download="story queen of june">download</a>
+    </div>
+
 
 
 
@@ -764,6 +779,15 @@
         document.getElementById('pp-29').style.display = "none";
         document.body.style.overflow = "visible";
       }
+
+      function show30() {
+        document.getElementById('pp-30').style.display = "block";
+        document.body.style.overflow = "hidden";
+      }
+      function close30() {
+        document.getElementById('pp-30').style.display = "none";
+        document.body.style.overflow = "visible";
+      }      
 
 
     </script>
