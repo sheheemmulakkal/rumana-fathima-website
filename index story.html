@@ -60,6 +60,11 @@
 
     <div class="row grid-section container-fluid p-4">
 
+
+        <div  onclick="show33()" class="image col-6 col-md-3 col-lg-2">
+          <img class="card-img" src="img/crd-stry-33.jpg" alt="">
+        </div>
+
         <div  onclick="show32()" class="image col-6 col-md-3 col-lg-2">
           <img class="card-img" src="img/crd-stry-32.jpg" alt="">
         </div>
@@ -194,6 +199,15 @@
 
 
     <!----  POPUP   -->
+
+
+          <div id="pp-33" class="popup-bg">
+            <span onclick="close33()" >&times;</span>
+            <div class="popup-image-1">
+                <img src="img/stry-33 cd.jpg" alt="">
+            </div>
+              <a href="img/stry-33.jpg" class="dwnld-btn" download="story queen of june 29">download</a>
+          </div>
 
 
     <div id="pp-30" class="popup-bg">
@@ -834,7 +848,17 @@
       function close32() {
         document.getElementById('pp-32').style.display = "none";
         document.body.style.overflow = "visible";
-      }     
+      }
+      
+      
+      function show33() {
+        document.getElementById('pp-33').style.display = "block";
+        document.body.style.overflow = "hidden";
+      }
+      function close33() {
+        document.getElementById('pp-33').style.display = "none";
+        document.body.style.overflow = "visible";
+      }
 
     </script>
     
